@@ -1,0 +1,10 @@
+.container{
+    display: grid;
+    grid-template-columns: 100px 50px 80px 200px; /* Cria um Grid com quatro colunas fixas*/
+    grid-template-rows: 80px 100px 100px;/*Cria um Grid com 3 linhas de altura fixa*/
+    grid-gap:20px 10px;/*criar um espacamento (gap em ingles) entre as colunas e/oi linhas do grid.*/
+}
+h1{
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
