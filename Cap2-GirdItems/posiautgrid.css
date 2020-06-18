@@ -1,0 +1,7 @@
+.container{
+    display: grid;
+    grid-template-columns: 100px 150px;
+    grid-template-rows: 90px 90px;
+    grid-gap:10px;
+    grid-auto-flow: column; /*destina alterar o modelo de posicionamento automatico do grid. Obdecendo a ordem da marcacao html.*/
+}

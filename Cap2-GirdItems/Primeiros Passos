@@ -3,17 +3,17 @@
 
 * Display
 Essa oção tem que ser colocada no container que vai ter os itens. Elá e responsavél para que os itens saibá que eles estão em um grid.
-
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 *grid-template-columns
 Essa oção tem que ser colocada no container que vai ter os itens. Cria o tamanho das colunas do Grid.
-
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 *grid-template-rows
 Essa oção tem que ser colocada no container que vai ter os itens.Cria um Grid com 3 linhas de altura fixa.
-
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 *grid-template-areas
 Essa propiedade é a forma abreviada de se declararem as propiedades grid-template-rows e grid-template-columns
 Sintaxe : grid-template:80px 100px 100px/ 100px 50px 80px 200px;
-
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 *grid-template
 
 *grid-column-gap
@@ -29,17 +29,49 @@ grid-column-gap:10px;
 grid-gap:20px 10px; /* Equivalente ás duas declarações anteriores*/
 grid-gap:30px; /*espacamento igual tanto para colunas como para linhas*/
 grid-gap:0 10px; /*espacamento somente para colunas*/
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+* grid-auto-columns
+Definir largura das colunas do grid implicito.Deve ser declarado no grid do container
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+*grid-auto-rows
+Definir altura das linhas do grid implicito
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+* grid-auto-flow:
+destina alterar o modelo de posicionamento automatico do grid. Obdecendo a ordem da marcacao html.
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 -----------------------------------------------------------------------------------------------------------------Grid Itens------------------------------------------------------------------------------------------------------------
 
-* grid-column-start
+* grid-column-start - grid-column-end - grid-row-start -grid-row-end
+Essa propiedade server para posicionar grid itens nas celulas. Que por padrão os grids items se distribuem na ordem da esquerda para direita. Essas propiedade permite alterar esse padão.
 
-* grid-column-end
+Sintaxe:
+    grid-column-start: 1;/* coluna que inicia na grid line vertical numero 1*/
+    grid-column-end: 5; /* coluna que termina na grid line verticalnumero 5*/
+    grid-row-start: 3;/*linha que inicia na grid line horizontal numero  3*/
+    grid-row-end:  4;/*linha que termina na grid line horizontal numero 4*/
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-* grid-row-start
 
-* grid-row-end
+* grid-column - grid-row
+A propiedade grid-column  é a maneira abreviada  de se declararem as propiedade grid-column-start e grid-column-end é a propiedade grid-row é a maneira abreviada de se declararem as propiedade grid-row-start e grid-row-end
 
-* grid-column
-
+Sintaxe:
+grid-column:1/5
+grid-row:3/4;
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 * grid-area
+
+A propiedade grid-areas éa maneira abreviada de se declararem as propiedade grid-column e grid-row.
+
+Primeiro valor   =>  grid-row-start
+Segundo valor    =>  grid-column-start
+Terceiro vALOR   =>  grid-row-end
+QuartoValor      =>  grid-column-end
+
+Sintaxe :
+grid-areas:3 / 1 / 4 /5 ;
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

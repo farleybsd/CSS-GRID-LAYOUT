@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dense.html</title>
+    <style rel="stylesheet">
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 60px 60px 60px;
+            grid-gap: 10px;
+            grid-auto-flow: row;
+        }
+
+        .containe1 {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 60px 60px 60px;
+            grid-gap: 10px;
+            grid-auto-flow: row dense;
+        }
+
+
+        .box1 {
+
+            background: #8cd9ad;
+        }
+
+        .box2 {
+            grid-column: auto / span 2;
+            background: #e37e35;
+        }
+
+        .box3 {
+            grid-area: auto /1 / auto / 3;
+            background: #8b008b;
+        }
+
+        .box4 {
+            grid-area: 2 /3 / 4 / 4;
+            background: #ab2121;
+        }
+
+        .box5 {
+            background: #0000b3;
+        }
+
+        .box6 {
+            background: #999;
+        }
+
+        .box7 {
+            background: #8b4513;
+        }
+
+        .box8 {
+            background: #ccc;
+        }
+
+        .box9 {
+            background: #80dd80;
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="box box1">Box1</div>
+    <div class="box box2">Box2</div>
+    <div class="box box3">Box3</div>
+    <div class="box box4">Box4</div>
+    <div class="box box5">Box5</div>
+
+</div>
+<div class="containe1">
+    <div class="box box1">Box1</div>
+    <div class="box box2">Box2</div>
+    <div class="box box3">Box3</div>
+    <div class="box box4">Box4</div>
+    <div class="box box5">Box5</div>
+
+</div>
+
+<body>
+
+</body>
+
+</html>

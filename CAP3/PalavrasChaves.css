@@ -1,0 +1,13 @@
+
+.container{
+    display: grid; /*Habilitar o grid mo container*/
+    grid-template-columns: 100px 50px 80px 200px; /* Cria um Grid com quatro colunas fixas*/
+    grid-template-rows: 80px 100px 100px;/*Cria um Grid com 3 linhas de altura fixa*/
+    grid-gap:20px 10px;/*criar um espacamento (gap em ingles) entre as colunas e/oi linhas do grid.*/
+}
+
+.area1{
+grid-column: 2 / span 4;
+}
+.area2{ grid-row:  3/ span 2;}
+.area3{ grid-column: 3 / span 4; grid-row: 3 /span2;}

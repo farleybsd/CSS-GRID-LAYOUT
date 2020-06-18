@@ -1,0 +1,27 @@
+/* grid-row-start / grid-column-start / grid-row-end / grid-column-end*/
+
+.container{
+    display: grid;
+    grid-template-columns: 150px 700px 150px;
+    grid-template-rows: 60px 40px 200px 60px;
+}
+.topo{
+    grid-area: 1 / 1 / 2 / 4;
+}
+.menu{
+    grid-area: 2 / 1  / 3 / 4;
+}
+
+.principal{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.primaria{
+    grid-area: 3 / 1 / 4 / 2;
+}
+.secundaria{
+    grid-area: 3 / 3 / 4 / 4; ;
+}
+.rodape{
+    grid-area: 4 / 1 / 5 / 4; ;
+}
