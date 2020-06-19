@@ -1,0 +1,37 @@
+ *********************************************************************************** Unidades Relativas ****************************************************************************************************************************** 
+
+#################################################################################### Valor de referençia ##############################################################################################################################
+
+em => Tamanho da  fonte ('font-size') do elemento no qual a unidade é declarada.
+
+ex =>  Altura da letra x (xis) da fonte herdada.
+
+ch => largura acrescida do espassament em volta do numero 0(zero) da fonte do elemento no qual a unidade e declarada .
+
+rem => Tamanho da fonte ('font-size') do elemento raiz do documento 
+
+vw => 1% da largura do viewport(é a área visível do usuário de uma página da web).
+
+vh => 1% da Altura do viewport(é a área visível do usuário de uma página da web).
+
+vmin => a menor medida entre vw e vh.
+
+vmax = a maior medida entre vw e vh.
+
+*********************************************************************************** Unidades Absolutas ****************************************************************************************************************************** 
+
+#################################################################################### Valor absoluto    ###############################################################################################################################
+
+cm => centímetro: 96px/2.54
+
+mm => milímetro : 1/10cm
+
+q => 1/4 do milímetro 1/40cm
+
+in => polegada: 2.54cm = 96px
+
+pt => point 1/72 in
+
+pc => pica : 12 pt ou 1/6in
+
+px => pixel 1/96in 

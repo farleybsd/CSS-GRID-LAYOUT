@@ -1,0 +1,3 @@
+funcao repear()
+Destinada ao diensionameto do grid cujo o retorno da função é um valor a ser definido para as propiedades grid-template-columns e grid-template-rows.
+o Primeiro parametro  numero de repetiçoes  e o segundo uma medida de comrimento.

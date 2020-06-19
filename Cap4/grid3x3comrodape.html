@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid3x3comrodape.html</title>
+    <style rel="stylesheet">
+        .container {
+            display: grid;
+            grid-template-columns: 200px minmax(200px, 1fr) 200px;
+            grid-template-rows: 50px minmax(200px, auto) 50px;
+            grid-gap: 10px 20px;
+        }
+
+        .topo {
+            grid-area: 1 / 1 /2 / 4;
+        }
+
+        .rodape {
+            grid-area: 3 / 1 / 4 / 4;
+        }
+
+        .principal {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="topo">Topo</header>
+        <main class="principal">Principal</main>
+        <aside class="primaria">Primaria</aside>
+        <aside class="secundaria">Secundaria</aside>
+        <footer class="rodape">Rodape</footer>
+
+    </div>
+</body>
+
+</html>
