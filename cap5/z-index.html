@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zindex</title>
+    <style rel="stylesheet">
+        .container1,
+        .container2 {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
+            grid-template-rows: repeat(4, 80px);
+            margin-bottom: 50px;
+        }
+
+        .box1 {
+            background-color: blue;
+            grid-column: 1 / span 3;
+            /*onde inicia e termina a coluna nesse caso vai da coluna 1 a coluna 3*/
+        }
+
+        .box2 {
+            background-color: yellow;
+            opacity: .7;
+            grid-column: 2 / span 4;
+            /*onde inicia e termina a coluna nesse caso vai da coluna 1 a coluna 3*/
+            grid-row: 1 / span 2;
+            /*onde inicia e termina a linha nesse caso vai da linha 1 a linha 3*/
+        }
+
+        .box3 {
+            background-color: green;
+            grid-column: 1;
+            grid-row: 3 / span 2;
+            /*onde inicia e termina a linha nesse caso vai da linha 2 a linha 3*/
+        }
+
+        .box4 {
+            background-color: rebeccapurple;
+            opacity: .7;
+            grid-column: 2;
+            grid-row: 3 / 5;
+            position: relative;
+            left: -40%;
+            top: -100px;
+        }
+
+        .container2>.box1 {
+            z-index: 4
+        }
+
+        .container2>.box2 {
+            z-index: 3
+        }
+
+        .container2>.box3 {
+            z-index: 2
+        }
+
+        .container2>.box4 {
+            z-index: 1
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box4</div>
+    </div>
+
+    <div class="container2">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box4</div>
+    </div>
+</body>
+
+</html>

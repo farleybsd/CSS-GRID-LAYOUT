@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Itens</title>
+    <style rel="stylesheet">
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 90px 90px;
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section>Conteudos</section>
+        <h1>Titulo do Nivel</h1>
+        <p> Parágrafo</p>
+        Texto dentro do container
+
+        <span>
+            Lorem ipsum
+            <em style="display:block">dolor site</em>
+            <strong> amet,</strong>
+            <i> consectuer adipiscing elit.</i>
+            <!-- Aqui uma linha em branco-->
+            <div style="float: right">
+                <p>FLOAT</p>
+            </div>
+        </span>
+    </div>
+</body>
+
+</html>
