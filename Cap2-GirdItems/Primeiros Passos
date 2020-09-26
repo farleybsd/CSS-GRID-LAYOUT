@@ -74,4 +74,15 @@ QuartoValor      =>  grid-column-end
 Sintaxe :
 grid-areas:3 / 1 / 4 /5 ;
 
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+A unidade fr
+
+Nas propriedades de grid podem ser utilizadas quaisquer unidades de medida. Para nos ajudar a criar layouts flexíveis utilizando o grid, foi criada uma unidade nova.
+ A unidade fr representa uma fração do espaço disponível no container do grid. A próxima definição de grid cria três espaços com tamanhos iguais que aumentam e diminuem 
+ de acordo com o espaço disponível. 
+ _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+VH
+
+ A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px,
+  1vw equivale a 7.5px.
