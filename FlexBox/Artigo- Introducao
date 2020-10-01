@@ -1,0 +1,84 @@
+ Introdução 
+
+ A diferenças entre FlexBox e Grid Layout :
+
+ FlexBox -> Criação de Layout em uma dimensão, seja horizontal(posicionamento em linhas) ou vertical(posicionamento entre colunas).
+ Grid Layout -> Criação de Layout em duas dimensão linha e coluna
+
+Terminologia :
+
+-> Flex Container 
+É um elemento da marcação contendo elementos filhos e destinados a criar um contexto de formatação Flex para seus elementos filhos.
+
+
+.Container{
+    display:Flex;
+}
+
+-> Flex item 
+
+Flex item são elementos-filhos de um Container em modo flex.
+Ao se declarar o container no modo flex como mostrado na regra css,cada um dos elementos div filho do container se torna um flex item.
+Com o container em modo padrão, os elementos-filhos se distribuem conforme suas propiedades display inline.
+Com o container em modo flex,os boxes se distribuem,por padrão,segundo o eixo horizontal(em linha).
+
+-> Eixos 
+Os eixos do FlexBox sao Main Axis,por padrão é o eixo horizontal e o seu sentindo é da esquerda para direita, e o cross axis é o eixo vertical e o seu sentindo e de cima para baixo.
+Essa propiedades podem ser invertida com o flex-direction
+
+-> Propiedades Css para flex container
+
+* Display 
+ Declara-se essa propiedade com o valor flex para criar o contexto flex fazendo com que os elemento filhos do container entrem em modo flex e assim sejam reconhecidos pelos mecanismo css nativos do navegador.
+ 
+ .container{
+     display:flex;
+ }
+
+* flex-direction
+
+Essa propiedade adminite os valores -> row , column , row-reverse e column-reverse.O valor inicial é row.
+Destina-se a definir o sentindo e a direção do main axis respectivamente na horizontal para a direita (inicial) para baixo,horizontal para esquerda e vertical para cima.
+ 
+ .container{
+     display:flex;
+     flex-direction:column;/* Valor inicial e row */
+ }
+
+* justify-content
+
+Essa propiedade adminite os valores flex-start, center,flex-end,space-between e space-arround. Valor inicial e flex-start.
+Destina-se alinhar o flex-items dentro do container segundo a direção e sentindo do eixo main axis.
+Se o valor de flex-direction for row,o main axis e horizontal e o alinhamento sera respectivamente a esquerda, no centro , á direita,distruindo os espacos no container igualmente entre os flex items e distribuindo
+os espacos no container igualmente a cada flex item.
+
+*align-items
+Essa propiedade adminite os valores flex-start,center,flex-end,stretch e baseline.
+O valor inicial stretch, o que faz com que os flex items se expandam em altura ate ocupar toda altura do container.
+Destina-se a alinhar os flex-items dentro do container segundo a direção e o sentindo do cross axis.
+Se o valor de flex-direction for row, o cros axis vertical e o alinhamento será respectivamente em cima e  no centro,embaixo,esticado,e alinhado pela base dos textos.
+
+* align-content
+Essa propiedade adminite os valores flex-start,center,flex-end,stretch space-between e space-arround. O valor inicial é stretch;
+Destina-se alinhar os flex items dentro do container segundo a direção e o sentindo do cros axis aplica-se no caso em que os flex items sao dispostos dentro de um container com multiplas linhas.
+
+* flex - wrap
+
+Essa propiedade adminite os valores nowrap,wrap e wrap-reverse. O valor inicial é nowrap. Destinase a controlar  como um container contem seus flex item.
+Se em uma linha continua ou com quebras de linha.Lembre-se de que em flexbox linhas sao as direçoes do eixo main ou seja horizontal e  vertical.
+Se o valor de flex-wrap for nowrap, o container contem todos os flex-item em linha.
+
+Se o valor de flex-wrap for wrap,há quebras de linha no container para conter os flex items em múltiplas linhas.A quantidade de flex items em uma linha depende da soma de suas larguras
+com as larguras eventuais das margens,enquanto essa soma for menor que a largura do container, os flex items vão sendo colocados na mesma linha.
+
+* flex-flow
+
+ Essa propiedade é a maneira abreviada de se declarar os valores flex-direction e flex-wrap ness ordem.
+
+ As conbinaçoes possiveis sao ->
+
+ row nowrap , row wrap, row wrap-reverse
+ column nowrap , column wrap-reverse, row reverse wrap
+ row reverse wrap reverse,column-reverse nowrap,column-reverse ,
+ wrap-reverse 
+ Valor inicial nowrap
