@@ -1,0 +1,20 @@
+ /*************************************
+ * Propiedades CSS para os flex items**
+ **************************************/
+
+ Order ->
+
+ Essa propiedade admite como valor um numero inteiro positivo ou negativo. valor
+ inicial é 0 (Zero).
+ Destina-se reodernar os flex-items dentro do container sem interferir com a ordem
+ que eles ocupam na marcação.Por padrão, a ordem de posicionamento dos flex items
+ dentro do container segue a mesma  sequência da posição que eles ocupam na marcação
+ html, o primeiro item marcado é o primeiro da sequencia.
+
+ Align-self ->
+
+ Essa propiedade admite os valores auto,flex-start,center,flex-end,stretch e baseline. O valor inicial e auto
+ Destina-se alinhar individualmente os flex items dentro do container segundo a direção e o sentido do cross axis.
+ Covém resaltar que a propiedade Align-content estudada anteriormente alinha todos dos flex items de uma vez so dentro
+ do container.
+ 
