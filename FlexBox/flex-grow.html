@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+    <style rel="stylesheet">
+        .container {
+            max-width: 1000px;
+            display: flex;
+        }
+
+        .container> :nth-child(1) {
+            width: 200px;
+            flex-grow: 1;
+        }
+
+        .container> :nth-child(2) {
+            width: 200px;
+            flex-grow: 3;
+        }
+
+        .container> :nth-child(3) {
+            width: 200px;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div> DIV 3</div>
+    </div>
+</body>
+
+</html>

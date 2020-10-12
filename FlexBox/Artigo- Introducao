@@ -61,6 +61,7 @@ Se o valor de flex-direction for row, o cros axis vertical e o alinhamento será
 * align-content
 Essa propiedade adminite os valores flex-start,center,flex-end,stretch space-between e space-arround. O valor inicial é stretch;
 Destina-se alinhar os flex items dentro do container segundo a direção e o sentindo do cros axis aplica-se no caso em que os flex items sao dispostos dentro de um container com multiplas linhas.
+Essa propiedade alinha todos os flex items de uma vez so dentro do container.
 
 * flex - wrap
 

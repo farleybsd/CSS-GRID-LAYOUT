@@ -1,0 +1,50 @@
+ Veremos com dethales as seguintes propiedades para os flex items :
+
+ * Order 
+ * align-self
+ * flex-grow
+ * flex-shrink 
+ * flex-basis
+ * flex 
+
+ -> Order 
+
+ Essa propiedades admite como valor  um numero inteiro positivo ou negattivo e o seu valor inicial é 0.
+ Destina-se reordenar os flex items dentro do container sem interferir com a ordem que eles ocupam na marcaçao.
+ Padrão, a ordem de posicionamento dos flex items dentro do container segue a mesma sequencia da posição
+ que eles ocupam na marcaçao. Ou seja o primeiro item marcado é o primeiro da sequencia.
+
+ -> align-self
+
+ Essa propiedade admite os valores auto,flex-start,center,flex-end,stretch e baseline. O valor inicial e auto.
+ Destina-se a alinhar individualmente os flex items dentro de um container segundo a direcao e o sentido do cross axis.
+ Se o valor de flex-direction for row, o cross axis é vertical e o alinhamento será respectivamente automatico,em cima,
+ no centro,embaixo,esticado e alinhado pela linha de base dos textos.
+
+ -> Flex-grow
+
+ Essa propiedade admite como valor número 0 ou numero inteiro positivo.O valor inicial é zero.
+ Destina-se a definir o fator de crescimento do flex item dentro do container quando nele há espaço disponivel.
+
+ -> Flex - shrink
+
+ Essa propiedade admite como valor o numero 0 ou um numero inteiro positivo. O valor inicial é 1.
+
+ Destina-se a definir o fator de encolhimento do flex item dentro do container quando a largura do 
+ container for menor do que a soma das larguras dos flex items.
+
+
+ Flex-basis
+
+ Essa propiedade admite como valor a palavra chave content ou qualquer valor válido para se definir
+ a propiedade width ou height. Definir a dimensao inicial do flex item dentro do container no sentido
+ do main axis (largura ou altura).
+
+ .container > : nth-child(1){ flex-basis: 300px;}
+
+ flex 
+
+ Essa propiedade é a forma abreviada de ser declararem as propiedade flex-grow,flex-shrink e flex basis de
+ uma so vez. O único valor obrigatorio na declaracao dessa propiedades é flex-basis, os outros dois valores
+ são opcionais flex-grow e 1 para flex-shrink. O valor inicial dessa propiedades e 1 0 auto que sao os valores
+ das 3 propiedades.
